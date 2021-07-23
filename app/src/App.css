@@ -1,33 +1,77 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 8px;
+}
+
+.logo {
+  border: 8px;
+  padding: 8px;
+  width: 100px;
+  border-radius: 30%;
+}
+
+.card {
+  padding: 5px;
+  width: 120px;
+  min-height: 223px;
+  border-radius: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardBottom {
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.textData {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.campaignTitle {
+  font-weight: bold;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payPerInstall {
+  color: #009330;
+  font-size: 20px;
+}
+
+.scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.borderForTop {
+  border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+}
+
+.btn {
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+
+.imageWithOverlay {
+  position: relative;
+}
+
+.imageWithOverlay img {
+  display: block;
+}
+
+.imageWithOverlay .playBtn {
+  position: absolute;
+  bottom: 40%;
+  left: 35%;
 }
